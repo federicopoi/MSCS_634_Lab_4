@@ -1,0 +1,123 @@
+{
+  "comparison": [
+    {
+      "Model": "Mean baseline",
+      "Train RMSE": 77.9512540821802,
+      "CV RMSE": 78.336806029485,
+      "MAE": 64.00646146990485,
+      "MSE": 5361.533457238513,
+      "RMSE": 73.22249283682244,
+      "R2": -0.011962984778542296
+    },
+    {
+      "Model": "Simple linear (BMI)",
+      "Train RMSE": 62.081500079136454,
+      "CV RMSE": 62.52320632179486,
+      "MAE": 52.25997644534553,
+      "MSE": 4061.8259284949268,
+      "RMSE": 63.73245584860925,
+      "R2": 0.23335039815872138
+    },
+    {
+      "Model": "Multiple linear",
+      "Train RMSE": 53.558843367230935,
+      "CV RMSE": 55.444946241013525,
+      "MAE": 42.79409467959994,
+      "MSE": 2900.193628493482,
+      "RMSE": 53.85344583676593,
+      "R2": 0.45260276297191937
+    },
+    {
+      "Model": "Polynomial degree 2",
+      "Train RMSE": 48.91971604639364,
+      "CV RMSE": 62.66030945160928,
+      "MAE": 43.58169325465299,
+      "MSE": 3096.028307344303,
+      "RMSE": 55.64196534401263,
+      "R2": 0.4156399336407943
+    },
+    {
+      "Model": "Polynomial degree 3",
+      "Train RMSE": 27.306014877287147,
+      "CV RMSE": 2612.2846663868368,
+      "MAE": 164.85389734312133,
+      "MSE": 82446.04875005553,
+      "RMSE": 287.1341998962428,
+      "R2": -14.561284890176866
+    },
+    {
+      "Model": "Ridge",
+      "Train RMSE": 53.575144584887724,
+      "CV RMSE": 55.4250070353217,
+      "MAE": 42.81199941834889,
+      "MSE": 2892.0145657501726,
+      "RMSE": 53.777454065343896,
+      "R2": 0.45414652070698225
+    },
+    {
+      "Model": "Lasso",
+      "Train RMSE": 53.598033161704734,
+      "CV RMSE": 55.40383998600388,
+      "MAE": 42.805150179349425,
+      "MSE": 2884.675063078485,
+      "RMSE": 53.7091711263401,
+      "R2": 0.455531815621146
+    },
+    {
+      "Model": "Ridge + quadratic",
+      "Train RMSE": 51.64968072210417,
+      "CV RMSE": 56.89389307678511,
+      "MAE": 41.470534898868216,
+      "MSE": 2649.6122679057544,
+      "RMSE": 51.47438458015554,
+      "R2": 0.49989875834575637
+    },
+    {
+      "Model": "Lasso + quadratic",
+      "Train RMSE": 54.383302045966026,
+      "CV RMSE": 56.244313349256444,
+      "MAE": 42.50481233613478,
+      "MSE": 2685.620055549818,
+      "RMSE": 51.82296841700423,
+      "R2": 0.49310246610023034
+    }
+  ],
+  "alphas": [
+    {
+      "Model": "Ridge",
+      "Alpha": 1.0,
+      "Validation RMSE": 55.4250070353217,
+      "Nonzero coefficients": 10,
+      "Total coefficients": 10
+    },
+    {
+      "Model": "Lasso",
+      "Alpha": 0.1,
+      "Validation RMSE": 55.40383998600388,
+      "Nonzero coefficients": 10,
+      "Total coefficients": 10
+    },
+    {
+      "Model": "Ridge + quadratic",
+      "Alpha": 100.0,
+      "Validation RMSE": 56.89389307678511,
+      "Nonzero coefficients": 65,
+      "Total coefficients": 65
+    },
+    {
+      "Model": "Lasso + quadratic",
+      "Alpha": 4.6415888336127775,
+      "Validation RMSE": 56.244313349256444,
+      "Nonzero coefficients": 11,
+      "Total coefficients": 65
+    }
+  ],
+  "selected_by_cv": "Lasso",
+  "lowest_test_rmse": "Ridge + quadratic",
+  "versions": {
+    "python": "3.14.3",
+    "sklearn": "1.8.0",
+    "numpy": "2.4.3",
+    "pandas": "3.0.1"
+  }
+}

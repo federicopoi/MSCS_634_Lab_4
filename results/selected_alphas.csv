@@ -1,0 +1,5 @@
+Model,Alpha,Validation RMSE,Nonzero coefficients,Total coefficients
+Ridge,1.0,55.4250070353217,10,10
+Lasso,0.1,55.40383998600388,10,10
+Ridge + quadratic,100.0,56.89389307678511,65,65
+Lasso + quadratic,4.6415888336127775,56.244313349256444,11,65
